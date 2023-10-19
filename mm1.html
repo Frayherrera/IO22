@@ -47,25 +47,25 @@
 
       <div class="section-title" data-aos="zoom-out">
         <h2>Services</h2>
-        <p>Modelo M/G/1
+        <p>Modelo M/M/1
         </p>
       </div>
       <div class="row ">
         <div class="col-6 col-md-4">
           <div class="row">
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label"><b>λ</b> Tasa de llegada</label>
-              <input type="number" class="form-control" id="Tllegada" placeholder="0">
+              <label for="exampleFormControlInput1" class="form-label"><b>λ</b> Tasa de llegada cliente/min</label>
+              <input type="number" class="form-control" id="Tllegada1" placeholder="0">
             </div>
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label"><b>μ</b> Tasa de servicio</label>
-              <input type="number" class="form-control" id="Tservicio" placeholder="0">
+              <label for="exampleFormControlInput1" class="form-label"><b>μ</b> Tasa de servicio cliente/min</label>
+              <input type="number" class="form-control" id="Tservicio1" placeholder="0">
             </div>
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label"><b>σ</b> La media</label>
-              <input readonly type="number" class="form-control" id="media" placeholder="0">
+              <label for="exampleFormControlInput1" class="form-label"><b>N</b> Numero clientes</label>
+              <input  type="number" class="form-control" id="numero" placeholder="0">
             </div>
-            <button type="button" onclick="calcularmg1()" class="btn btn-primary">CALCULAR</button>
+            <button type="button" onclick="calcularmm1()" class="btn btn-primary">CALCULAR</button>
             </div>  
           </div>
           <div class="col-md-1"></div>
@@ -98,11 +98,11 @@
                   <input readonly type="number" class="form-control" id="P0" placeholder="0">
                 </div>
                 <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label"><b>(Pw)</b> Probabilidad de que un cliente tenga que esperar por el servicio</label>
+                  <label for="exampleFormControlInput1" class="form-label"><b>(Pn)</b> Probabilidad de que el sistema tenga exactamente "n" clientes</label>
                   <input readonly type="number" class="form-control" id="Pw" placeholder="0">
                 </div>
                 <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label"><b>(Lq)</b> Número esperado de clientes en la cola</label>
+                  <label for="exampleFormControlInput1" class="form-label"><b>(Lq)</b> Número esperado de clientes en la cola </label>
                   <input readonly type="number" class="form-control" id="Lq" placeholder="0">
                 </div>
               </div>

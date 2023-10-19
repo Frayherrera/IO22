@@ -22,7 +22,6 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
   <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
@@ -47,25 +46,25 @@
 
       <div class="section-title" data-aos="zoom-out">
         <h2>Services</h2>
-        <p>Modelo M/G/1
+        <p>Modelo M/M/C
         </p>
       </div>
       <div class="row ">
         <div class="col-6 col-md-4">
           <div class="row">
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label"><b>λ</b> Tasa de llegada</label>
-              <input type="number" class="form-control" id="Tllegada" placeholder="0">
+              <label for="exampleFormControlInput1" class="form-label"><b>λ</b> Tasa de llegada cliente/min</label>
+              <input type="number" class="form-control" id="Tllegada1" placeholder="0">
             </div>
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label"><b>μ</b> Tasa de servicio</label>
-              <input type="number" class="form-control" id="Tservicio" placeholder="0">
+              <label for="exampleFormControlInput1" class="form-label"><b>μ</b> Tasa de servicio cliente/min</label>
+              <input type="number" class="form-control" id="Tservicio1" placeholder="0">
             </div>
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label"><b>σ</b> La media</label>
-              <input readonly type="number" class="form-control" id="media" placeholder="0">
+              <label for="exampleFormControlInput1" class="form-label"><b>S</b> Numero servidores</label>
+              <input  type="number" class="form-control" id="numeros" placeholder="0">
             </div>
-            <button type="button" onclick="calcularmg1()" class="btn btn-primary">CALCULAR</button>
+            <button type="button" onclick="calcularmmc()" class="btn btn-primary">CALCULAR</button>
             </div>  
           </div>
           <div class="col-md-1"></div>
@@ -77,35 +76,25 @@
               <div class="col">
                 <div class="row">
                   <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label"><b>(Wq)</b> Tiempo promedio que un cliente espera
-                      en la cola</label>
-                    <input readonly type="number" class="form-control" id="Wq" placeholder="0">
+                    <label for="exampleFormControlInput1" class="form-label"><b>(P0)</b> La probabilidad de no tener clientes en 
+                      clientes en el sistema</label>
+                    <input readonly type="number" class="form-control" id="P0" placeholder="0">
 
                   </div>
                   <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label"><b>(Ls)</b> Número esperado de clientes en el sistema</label>
+                    <label for="exampleFormControlInput1" class="form-label"><b>(Ls)</b> El número promedio de solicitudes en 
+                      solicitudes en el sistema</label>
                     <input readonly type="number" class="form-control" id="Ls" placeholder="0">
                   </div>
                   <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label"><b>(Ws)</b> Tiempo promedio de espera de un cliente en el sistema "(minutos)"</label>
-                    <input readonly type="number" class="form-control" id="Ws" placeholder="0">
+                    <label for="exampleFormControlInput1" class="form-label"><b>(Lq)</b>El número promedio de solicitudes en 
+                      solicitudes en la cola.
+                      </label>
+                    <input readonly type="number" class="form-control" id="Lq" placeholder="0">
                   </div>
                   </div>  
               </div>
-              <div class="col">
-                <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label"><b>(P0)</b> Probabilidad de tener 0 (cero)</label>
-                  <input readonly type="number" class="form-control" id="P0" placeholder="0">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label"><b>(Pw)</b> Probabilidad de que un cliente tenga que esperar por el servicio</label>
-                  <input readonly type="number" class="form-control" id="Pw" placeholder="0">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label"><b>(Lq)</b> Número esperado de clientes en la cola</label>
-                  <input readonly type="number" class="form-control" id="Lq" placeholder="0">
-                </div>
-              </div>
+            
             </div>
                  
             </div>
